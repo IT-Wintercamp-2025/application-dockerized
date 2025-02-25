@@ -8,7 +8,7 @@ git clone --recurse-submodules https://github.com/IT-Wintercamp-2025/application
 
 Update a specific submodule
 ```bash
-cd <submodule-name> # e.g. backend
+cd <submodule-folder> # e.g. backend
 git pull origin <branch> # e.g. production
 cd ..
 git add <submodule-folder>
