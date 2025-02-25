@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/IT-Wintercamp-2025/backend
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/IT-Wintercamp-2025/frontend

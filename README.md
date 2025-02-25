@@ -1,2 +1,2 @@
 # docker-application
-This repository bundles all application components (frontend, backend, db), providing the foundation for the Docker image.
+This repository bundles the application components backend and frontend, providing the foundation for the Docker image.
