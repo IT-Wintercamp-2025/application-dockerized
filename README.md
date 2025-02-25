@@ -12,7 +12,7 @@ cd <submodule-folder> # e.g. backend
 git pull origin <branch> # e.g. production
 cd ..
 git add <submodule-folder>
-git commit -m "Updated submodule <submodule>"
+git commit -m "Updated <submodule> submodule"
 git push origin <branch>
 ```
 
