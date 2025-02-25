@@ -6,16 +6,19 @@ This repository bundles the application components, providing the foundation for
 git clone --recurse-submodules https://github.com/IT-Wintercamp-2025/application-dockerized.git
 ```
 
-Update specific submodule
-cd <submodule> # backend
-git pull origin <branch> # production
+Update a specific submodule
+```bash
+cd <submodule-name> # e.g. backend
+git pull origin <branch> # e.g. production
 cd ..
-git add <submodule-folder> # backend 
+git add <submodule-folder>
 git commit -m "Updated <submodule> submodule"
 git push origin <branch>
+```
 
 Merge-update every submodule
+```bash
 git submodule update --remote --merge
 git commit -am "Updated all submodules"
 git push origin main
-
+```
