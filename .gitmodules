@@ -4,3 +4,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/IT-Wintercamp-2025/frontend
+[submodule "db"]
+	path = db
+	url = https://github.com/IT-Wintercamp-2025/db
