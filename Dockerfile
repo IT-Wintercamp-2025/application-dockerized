@@ -8,4 +8,4 @@ COPY backend/ /backend/
 
 RUN pip3 install -r ./backend/requirements.txt
 
-CMD ["pyhton", "-u", "./backend"]
+CMD ["python", "-u", "./backend"]
