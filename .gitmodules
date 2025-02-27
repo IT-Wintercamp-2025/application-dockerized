@@ -1,6 +1,3 @@
-[submodule "db"]
-	path = db
-	url = https://github.com/IT-Wintercamp-2025/db
 [submodule "backend"]
 	path = backend
 	url = https://github.com/IT-Wintercamp-2025/backend
