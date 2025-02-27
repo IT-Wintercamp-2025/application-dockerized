@@ -1,14 +1,21 @@
 services:
   database:
     extends:
-      file: ./db/docker-compose.yml
+      file: ./db/Backend/docker-compose.yml
       service: db
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: ticketsystem_db
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
-      - "3306:3306"
-    volumes:
-      -
+      - ${MYSQL_HOST_PORT}:3306
+
+  backend:
+    extends:
+      file: ./backend/docker/docker-compose.yml
+      service: backend
+    depends_on:
+      - database
+    ports:
+      - ${BACKEND_HOST_PORT}:5001
