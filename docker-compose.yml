@@ -4,12 +4,15 @@ services:
       file: ./db/docker-compose.yml
       service: db
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: ticketsystem_db
-      MYSQL_USER: user
+      MYSQL_ROOT_PASSWORD: "1234"
+      MYSQL_DATABASE: "backend"
+      MYSQL_USER: "root"
       MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
+    volumes:
+      - "${DATA_DIR}/sql:/var/lib/mysql"
+      - "./backend/Developer SQL/backend(4).sql:/docker-entrypoint-initdb.d/backend.sql"
 
   app:
     extends:
