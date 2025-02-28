@@ -1,9 +1,12 @@
 [submodule "backend"]
 	path = backend
+	branch = main
 	url = https://github.com/IT-Wintercamp-2025/backend
 [submodule "frontend"]
 	path = frontend
+	branch = main
 	url = https://github.com/IT-Wintercamp-2025/frontend
 [submodule "db"]
 	path = db
+	branch = main
 	url = https://github.com/IT-Wintercamp-2025/db
